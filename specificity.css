@@ -1,0 +1,23 @@
+/*
+#id selector
+.class, :pseudo-class and [attribute] selectors
+<tag>, ::pseudo-element selectors
+*/
+h1 {
+  /* color - property, red - value */
+  color: red;
+}
+
+/* селектор атрибута */
+[class*='__container'] {}
+
+.product:last-child {}
+.product *:last-child {}
+
+.product *:not(:last-child) {}
+
+.product p:last-of-type {}
+
+.product:nth-child(3n) {}
+.product:nth-child(odd) {}
+.product:nth-child(even) {}
